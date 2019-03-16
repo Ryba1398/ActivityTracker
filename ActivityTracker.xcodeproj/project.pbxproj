@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		955C83B4222442C100C83BB1 /* CommonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C83B3222442C100C83BB1 /* CommonCollectionViewController.swift */; };
+		955C83B6222445B100C83BB1 /* OneDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C83B5222445B100C83BB1 /* OneDayCollectionViewCell.swift */; };
 		958F456822118A8C00607385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F456722118A8C00607385 /* AppDelegate.swift */; };
-		958F456A22118A8C00607385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F456922118A8C00607385 /* ViewController.swift */; };
 		958F456D22118A8C00607385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F456B22118A8C00607385 /* Main.storyboard */; };
 		958F456F22118A8E00607385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958F456E22118A8E00607385 /* Assets.xcassets */; };
 		958F457222118A8E00607385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F457022118A8E00607385 /* LaunchScreen.storyboard */; };
+		95C2470D22119869008877AA /* ActivityTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2470C22119869008877AA /* ActivityTrackerApp.swift */; };
+		95C2470F221198D9008877AA /* DownloadClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2470E221198D9008877AA /* DownloadClass.swift */; };
+		95C2471122119BA3008877AA /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2471022119BA3008877AA /* JsonParser.swift */; };
+		95C247132211A231008877AA /* TransformData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C247122211A231008877AA /* TransformData.swift */; };
+		95C247152211A362008877AA /* ConvertUnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C247142211A362008877AA /* ConvertUnixTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		955C83B3222442C100C83BB1 /* CommonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewController.swift; sourceTree = "<group>"; };
+		955C83B5222445B100C83BB1 /* OneDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		958F456422118A8C00607385 /* ActivityTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958F456722118A8C00607385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		958F456922118A8C00607385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		958F456C22118A8C00607385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		958F456E22118A8E00607385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		958F457122118A8E00607385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		958F457322118A8E00607385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C2470C22119869008877AA /* ActivityTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTrackerApp.swift; sourceTree = "<group>"; };
+		95C2470E221198D9008877AA /* DownloadClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadClass.swift; sourceTree = "<group>"; };
+		95C2471022119BA3008877AA /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		95C247122211A231008877AA /* TransformData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformData.swift; sourceTree = "<group>"; };
+		95C247142211A362008877AA /* ConvertUnixTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertUnixTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				958F456722118A8C00607385 /* AppDelegate.swift */,
-				958F456922118A8C00607385 /* ViewController.swift */,
-				958F456B22118A8C00607385 /* Main.storyboard */,
 				958F456E22118A8E00607385 /* Assets.xcassets */,
-				958F457022118A8E00607385 /* LaunchScreen.storyboard */,
 				958F457322118A8E00607385 /* Info.plist */,
+				95D481B6223CDA5F00594783 /* Model */,
+				95D481B8223CDAB200594783 /* View */,
+				95D481B7223CDA8200594783 /* Controller */,
 			);
 			path = ActivityTracker;
+			sourceTree = "<group>";
+		};
+		95D481B6223CDA5F00594783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95C2470C22119869008877AA /* ActivityTrackerApp.swift */,
+				95C247122211A231008877AA /* TransformData.swift */,
+				95C247142211A362008877AA /* ConvertUnixTime.swift */,
+				95C2471022119BA3008877AA /* JsonParser.swift */,
+				95C2470E221198D9008877AA /* DownloadClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95D481B7223CDA8200594783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				955C83B3222442C100C83BB1 /* CommonCollectionViewController.swift */,
+				955C83B5222445B100C83BB1 /* OneDayCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95D481B8223CDAB200594783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				958F456B22118A8C00607385 /* Main.storyboard */,
+				958F457022118A8E00607385 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +142,7 @@
 				};
 			};
 			buildConfigurationList = 958F455F22118A8C00607385 /* Build configuration list for PBXProject "ActivityTracker" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,7 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958F456A22118A8C00607385 /* ViewController.swift in Sources */,
+				955C83B4222442C100C83BB1 /* CommonCollectionViewController.swift in Sources */,
+				95C2470F221198D9008877AA /* DownloadClass.swift in Sources */,
+				95C2471122119BA3008877AA /* JsonParser.swift in Sources */,
+				95C2470D22119869008877AA /* ActivityTrackerApp.swift in Sources */,
+				95C247152211A362008877AA /* ConvertUnixTime.swift in Sources */,
+				95C247132211A231008877AA /* TransformData.swift in Sources */,
+				955C83B6222445B100C83BB1 /* OneDayCollectionViewCell.swift in Sources */,
 				958F456822118A8C00607385 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5MN54QZUH;
 				INFOPLIST_FILE = ActivityTracker/Info.plist;
@@ -291,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ryb.CO.ActivityTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5MN54QZUH;
 				INFOPLIST_FILE = ActivityTracker/Info.plist;
@@ -309,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ryb.CO.ActivityTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
