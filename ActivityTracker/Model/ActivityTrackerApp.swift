@@ -14,7 +14,7 @@ class ActivityTrackerApp: NSObject {
     
     private var parsedData : [oneDayActivityInfo]? = nil
     
-    let url = "https://intern-f6251.firebaseio.com/intern/metric.json"
+    private let url = "https://intern-f6251.firebaseio.com/intern/metric.json"
     
     private (set) var result : [oneDayInfo]? = nil
     
@@ -31,9 +31,7 @@ class ActivityTrackerApp: NSObject {
         }
     }
 
-
-    
-    func didDataUpdate(){
+    private func didDataUpdate(){
         NotificationCenter.default.post(
             name: Notification.Name(notificationName),
             object: self
@@ -53,20 +51,19 @@ class ActivityTrackerApp: NSObject {
     }
     
     func update(){
-        
         self.transform()
         self.didDataUpdate()
     }
     
     func doThis(){
-        
         self.download()
-        
         self.parse()
-
         self.update()
     }
 }
+
+
+
 
 struct oneDayActivityInfo: Decodable {
     let aerobic, run, walk : Int

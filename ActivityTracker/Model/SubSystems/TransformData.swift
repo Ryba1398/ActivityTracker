@@ -12,7 +12,6 @@ class TransformDataClass{
     
     func transfromArray(inputArray: [oneDayActivityInfo], aim: Int) ->  [oneDayInfo] {
         return inputArray.map ({transformOneday(inputDay: $0, aim: aim)})
-        
     }
 
     private func transformOneday(inputDay: oneDayActivityInfo, aim: Int) -> oneDayInfo{

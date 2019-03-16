@@ -80,10 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				95C2470C22119869008877AA /* ActivityTrackerApp.swift */,
-				95C247122211A231008877AA /* TransformData.swift */,
-				95C247142211A362008877AA /* ConvertUnixTime.swift */,
-				95C2471022119BA3008877AA /* JsonParser.swift */,
-				95C2470E221198D9008877AA /* DownloadClass.swift */,
+				95D481BA223CED3100594783 /* SubSystems */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +101,17 @@
 				958F457022118A8E00607385 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		95D481BA223CED3100594783 /* SubSystems */ = {
+			isa = PBXGroup;
+			children = (
+				95C247122211A231008877AA /* TransformData.swift */,
+				95C247142211A362008877AA /* ConvertUnixTime.swift */,
+				95C2471022119BA3008877AA /* JsonParser.swift */,
+				95C2470E221198D9008877AA /* DownloadClass.swift */,
+			);
+			path = SubSystems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
